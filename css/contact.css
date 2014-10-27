@@ -1,0 +1,29 @@
+.contactbox{
+	
+	width: 40%;
+	margin-top:3em;
+	padding-bottom: 22px;
+	float:right;
+	margin-right:3em;
+	background-color:#f3f3f3;
+
+}
+.contacttext{
+	position:relative;
+	margin-left:2em;margin-right:2em;margin-top:2em;
+	
+}
+.contacttext a{
+	text-decoration:none;
+	font-size:1.3em;
+	margin-left:1em;
+}
+.contactsocial{
+	margin-top:2em;
+	text-align:center;
+	padding:-3em;
+  border-top: 1px solid #BDBDBD;
+	border-collapse: separate;
+	
+
+}
