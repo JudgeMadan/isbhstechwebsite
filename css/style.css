@@ -1,6 +1,6 @@
 /* line 2193*/
-b { 
-    font-weight: bold;
+b {
+	font-weight: bold;
 }
 
 /* Not Showing The Sub Menu Items*/
@@ -70,7 +70,7 @@ nav ul ul li a:hover {
 /*Styling Sub Sub Menubar, if there is a need for one*/
 /*Setting the height of content to 100% so that the white box does not cover the slideshow*/
 .content {
-height:100%;
+	height: 100%;
 }
 /*For some reason, if i dont't put this here, it wont work. It just colors the box below the slideshow*/
 .maincontent {
@@ -112,7 +112,7 @@ height:100%;
 .content h2 {
 	font-size: 1.6em;
 	font-family: 'Lato';
-	margin: 0;
+	margin-top: -20px;
 	padding: 40px 0;
 	text-align: center;
 }
@@ -123,7 +123,7 @@ height:100%;
 	padding: 20px 40px 40px;
 }
 .content .list .texthead {
-	font-size:16px;
+	font-size: 16px;
 	font-family: 'Lato';
 	margin: -10px 0px 0px -5px;
 }
@@ -686,8 +686,7 @@ table {
 	overflow: visible;
 	margin-bottom: 20px;
 	*position: relative;
-	*z-index: 2
-	font-family: 'Gill Sans';
+	*z-index: 2 font-family : 'Gill Sans';
 }
 .navbar-inner {
 	min-height: 40px;
