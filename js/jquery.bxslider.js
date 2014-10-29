@@ -53,13 +53,13 @@
 
 		// CONTROLS
 		controls : true,
-		nextText : '',
-		prevText : ''',
+		nextText : 'Next',
+		prevText : 'Prev',
 		nextSelector : null,
 		prevSelector : null,
 		autoControls : false,
-		startText : '',
-		stopText : '',
+		startText : 'Start',
+		stopText : 'Stop',
 		autoControlsCombine : false,
 		autoControlsSelector : null,
 
