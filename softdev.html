@@ -7,7 +7,17 @@
 
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+			<script>!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>')</script>
+			<script src="jquery.raptorize.1.0.js"></script>
+			<script type="text/javascript">
+				$(window).load(function() {
+					$('.button').raptorize({
+						'enterOn' : 'konami-code'
+					});
+				});
+			</script>
+			<script src="js/jquery.bxslider.js"></script>
 	</head>
 	<body style="display: block;">
 		<nav class="navbar navbar-static-top">
@@ -18,7 +28,7 @@
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li>
-								<a href="index.html"> </i> Home </a>
+								<a href="#" class="button"> </i> Home </a>
 							</li>
 							<li>
 								<a href="contact.html"> </b> Contact Us </a>
