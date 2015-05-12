@@ -25,14 +25,14 @@
 	border-top: 1px solid #BDBDBD;
 	border-collapse: separate;
 }
-#membersLink{
-	background-color:rgb(243,243,243);
-	padding:2.4vh;
-	border-width:5px;
-	position:absolute;
+#membersLink {
+	background-color: rgb(243,243,243);
+	padding: 2.4 vh;
+	border-width: 5px;
+	position: absolute;
 	border-radius: 1px;
-	border-color:#aaaaaa;
-	font-size:3.2vh;
-	margin-top:5vh;
-	margin-left:3vw;
+	border-color: #aaaaaa;
+	font-size: 3.2 vh;
+	margin-top: 5vh;
+	margin-left: 3vw;
 }
