@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Software Development</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/reflection.js"></script>
+	<script src="js/jquery.interpolate.js"></script>
+	<script src="js/jquery.coverflow.js"></script>
+	<script>
+	$(function() {
+		$('.photos').coverflow({
+			index:			3,
+			width:			320,
+			height:			240,
+			visible:		'density',
+			selectedCss:	{	opacity: 1	},
+			outerCss:		{	opacity: .2	},
+
+			select:		function(event, cover) {
+				var img = $(cover).children().andSelf().filter('img').last();
+				$('#photos-name').text(img.data('name') || 'unknown');
+				$('#photos-desc').html(img.data('desc') || 'unknown');
+				$('#photos-dl').html(img.data('dl') || '');
+				$('#photos-link').html(img.data('link') || 'error');
+			}
+		});
+	});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
+	<style>
+	h1{
+		text-align: 	center;
+		padding-top:20px;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		font-weight: 	400;
+		color: #3c7eae;
+		font-family: 'Roboto', sans-serif;
+		font-size:2.6em;
+	}
+
+	body {
+		/*background:url("images/background.png");*/
+	}
+	.bodytext{
+		margin-right:10vw;
+		margin-left:10vw;
+		font-family: 'Roboto', sans-serif;
+	}
+	a{
+		color: #3c7eae;
+		text-decoration: none;
+	}
+	.photos .cover {
+		cursor: pointer;
+
+		/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+	}
+
+	#photos-info {
+		position:		relative;
+		margin-left: 	auto;
+		margin-right: 	auto;
+		text-align:		center;
+		z-index:		99999999;
+		border-radius: 5px;
+		margin-top: 	270px;
+		padding: 		20px;
+		width: 			600px;
+		background: white;
+	}
+
+	#photos-name {
+		font-size: 170%;
+		letter-spacing: 1.1px;
+		line-height: 115%;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		padding-bottom:2.6px;
+	}
+
+
+	#photos-dl{
+		font-size: 110%;
+	}
+
+	#photos-desc{
+		text-align:justify;
+		width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#photos-link{
+		font-size: 110%;
+	}
+	.clearfix {
+		clear: both;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body style="display: block;">
+	<nav class="navbar navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="index.html" style="width: 180px;"> <img src="images/panther.png" width="38"> ISB HS Tech </a>
+
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us </a>
+						</li>
+						<li>
+							<a href="solutions.html">Tech Solutions</a>
+						</li>
+						<li>
+							<a href="community.html">Tech Drive </a>
+						</li>
+						<li>
+							<a href="techbar.html">Tech Bar</a>
+						</li>
+						<li>
+							<a href="softdev.html">Software Development</a>
+						</li>
+						<li>
+							<a href="buy.html">Store</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<br><br>
+	<p class="bodytext">&nbsp;&nbsp;&nbsp;&nbsp;Although not technically part of ISB HS Tech, the ISB Software developement club works hand in hand with HS Tech in order to provide quality software to the ISB community.  Their amazing work thusfar can be viewed in this digital portfolio.  Alternatively, <a href="http://studentdevelopers.isb.ac.th">click here</a> to visit their website.</p>
+	<div class="photos">
+		<img class="cover" data-name="ISB Ace for OS X" data-desc="ISB Ace was the first project to be developed by the ISB Software Development club. This application features a variety of useful tools to assist the every-day ISB student! These features include:<br>
+		<ul><li>Your current grades</li>
+			<li>Notifications when your grades change</li>
+			<li>Your schedule</li>
+			<li>A news feed with the laters Panther Productions broadcasts and International articles</li></ul>
+			Currently ISB Ace is available for Android devices and OSX, however the Software Development Club aims to release an iOS version this year as well." data-link="<a href='https://sites.google.com/a/students.isb.ac.th/hstech/software-development/isb-ace'>Download it here.</a>"  src="images/sd-portfolio/ISBACEOSX.png"/>
+			<img class="cover" data-name="ISB Ace for Android" data-desc="ISB Ace was the first project to be developed by the ISB Software Development club. This application features a variety of useful tools to assist the every-day ISB student! These features include:<br>
+			<ul><li>Your current grades</li>
+				<li>Notifications when your grades change</li>
+				<li>A grade calculator</li>
+				<li>Your schedule</li>
+				<li>A news feed with the laters Panther Productions broadcasts and International articles</li></ul>
+				Currently ISB Ace is available for Android devices and OSX, however the Software Development Club aims to release an iOS version this year as well." data-link="<a href='https://play.google.com/store/apps/details?id=com.isbhstech.isbace&hl=en'>Download it here.</a>" src="images/sd-portfolio/ISBACEANDROID.png"/>
+				<img class="cover" data-name="ISB HS Tech Website" data-desc="&nbsp;&nbsp;The site that you are currently viewing was created by the software development club" data-link="<a href='http://isbhstech.com'>Click to go to the homepage</a>" src="images/sd-portfolio/ISBHSTECHWEBSITE.png"/>
+				<img class="cover" data-name="ISB Software Development Website" data-desc="This very website is among one of the projects to be developed by the software development club. The website has two main functions. The website serves as a portal to showcase the hard work and dedication of the talented individuals in the club. Furthermore, it also serves as an interface to contact the club for any software developement needs." data-link="<a href='http://studentdevelopers.isb.ac.th/'>View it here.</a>" src="images/sd-portfolio/ISBSOFTDEVWEBSITE.png"/>
+				<img class="cover" data-name="Panthernation App for iOS and Android" data-desc="PantherNation is the one stop location where all members of the ISB community can receive information about all ongoings occurring with the school. The Software Development Club was hired to develop an application for mobiles, for easy access to both Panther Productions broadcasts and articles from The International." data-link="<a href='https://play.google.com/store/apps/details?id=com.ramicaza.iasisguide'>Download it here for Android here.</a><br> <a href='https://itunes.apple.com/th/app/panthernation/id960118731?mt=8'>Download it here for iOS</a>"  src="images/sd-portfolio/PANTHERNATION.png"/>
+				<img class="cover" data-name="International Scholastic Journal Of Science Website" data-desc="The International Scholastic Journal Of Science was created by ISB teacher Dr. Eales, with the purpose of publishing student research papers officially. Previously he had been using the ISB Journal of Physics, and then the ISB Journal of Science." data-link="<a href='http://isjos.org/'>View it here.</a>"  src="images/sd-portfolio/ISJOSWEBSITE.png"/>
+				<img class="cover" data-name="Student Scientists Website" data-desc="Hand-in-hand with the International Scholastic Journal of Science, the Student Scientists website acts as a guide for other educators to set up their own science journals. " data-link="<a href='http://studentscientists.org/'>View it here.</a>"  src="images/sd-portfolio/SSWEBSITE.png"/>
+			</div>
+			<div id="photos-info">
+				<div id="photos-name"></div>
+				<div id="photos-desc"></div><br>
+				<div id="photos-dl"></div>
+				<div id="photos-link"></div>
+			</div>
+			<footer class="mainFooter" style="bottom:0; position:absolute; width:100%;"class="clearfix">
+				<p>
+					Copyright &copy; 2014 ISB HS Tech. All rights reserved. Website by the ISB Software Development Club
+				</p>
+			</footer>
+		</body>
+		</html>

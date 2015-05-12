@@ -1,0 +1,265 @@
+/*THANKS SO MUCH MICROSOFT JAPAN!!!!*/
+/*Note: Some dude from MICROSOFT coded this, I don't know how to do this, but I know
+ how most of this coding works. I have edited this so that the coding works
+ the way I like it*/
+/* ==========================================================================
+ CSS SETTING
+ by Hiroaki WAKATSUKI
+ Converted 2014/2/16
+ ========================================================================== */
+/*I will comment on the parts that I know what they do.*/
+/*Otherwise, ill put "I Dont Know." Its Microsoft, for god sake*/
+/*I don't know*/
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*????*/
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+
+object, embed {
+	height: 100%;
+}
+/*Left goes left*/
+.left {
+	float: left;
+}
+/*right goes right*/
+.right {
+	float: right;
+}
+/*I don't know*/
+.clearfix {
+	*zoom: 1;
+}
+/*I don't know*/
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+/*Self Explanatory*/
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+/*I don't know...Yeah right.*/
+.hide {
+	display: none;
+}
+/*I don't know*/
+.antialiased {
+	-webkit-font-smoothing: antialiased;
+}
+/*Img css*/
+img {
+	display: inline-block;
+	vertical-align: middle;
+}
+/*text area css*/
+textarea {
+	height: auto;
+	min-height: 50px;
+}
+/*?*/
+select {
+	width: 100%;
+}
+/*I don't know*/
+i {
+	font-style: normal;
+}
+/*I don't know*/
+.animate {
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+/*gradient for button class*/
+.button {
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
+	background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(255, 255, 255, 0.05)), to(rgba(0, 0, 0, 0.2)));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*rows*/
+/*HOW ROWS WORKS*/
+/*It splits the page into collumns.
+ Row 1 is 1/12 of the page
+ Row 6 is 1/2 of the page
+ etc.
+ */
+.row {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 69.9em;
+	*zoom: 1;
+}
+/*Different rows*/
+.row .grid-1, .row .grid-2, .row .grid-3, .row .grid-4, .row .grid-5, .row .grid-6, .row .grid-7, .row .grid-8, .row .grid-9, .row .grid-10, .row .grid-11, .row .grid-12 {
+	float: left;
+	margin-left: 0.9%;
+	margin-right: 0.9%;
+}
+
+.row .grid-1 {
+	width: 6.53333%;
+}
+
+.row .grid-2 {
+	width: 14.86667%;
+}
+
+.row .grid-3 {
+	width: 23.2%;
+}
+
+.row .grid-4 {
+	width: 31.53333%;
+}
+
+.row .grid-5 {
+	width: 39.86667%;
+}
+
+.row .grid-6 {
+	width: 48.2%;
+}
+
+.row .grid-7 {
+	width: 56.53333%;
+}
+
+.row .grid-8 {
+	width: 64.86667%;
+}
+
+.row .grid-9 {
+	width: 73.2%;
+}
+
+.row .grid-10 {
+	width: 81.53333%;
+}
+
+.row .grid-11 {
+	width: 89.86667%;
+}
+
+.row .grid-12 {
+	width: 98.2%;
+}
+/*I don't know*/
+.row:before, .row:after {
+	content: " ";
+	display: table;
+}
+/*I don't know*/
+.row:after {
+	clear: both;
+}
+/*I don't know*/
+.row.collapse > .column, .row.collapse > .columns {
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	float: left;
+}
+
+.row.collapse .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.row .row {
+	width: auto;
+	margin-left: -0.9375em;
+	margin-right: -0.9375em;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: none;
+	*zoom: 1;
+}
+
+.row .row:before, .row .row:after {
+	content: " ";
+	display: table;
+}
+
+.row .row:after {
+	clear: both;
+}
+
+.row .row.collapse {
+	width: auto;
+	margin: 0;
+	max-width: none;
+	*zoom: 1;
+}
+
+.row .row.collapse:before, .row .row.collapse:after {
+	content: " ";
+	display: table;
+}
+
+.row .row.collapse:after {
+	clear: both;
+}
+/*I don't know*/
+@media only screen and (max-width: 40em) {
+	.row .grid-1, .row .grid-2, .row .grid-3, .row .grid-4, .row .grid-5, .row .grid-6, .row .grid-7, .row .grid-8, .row .grid-9, .row .grid-10, .row .grid-11, .row .grid-12 {
+		float: none;
+		width: 100% !important;
+		margin: 0 !important;
+		position: static !important;
+	}
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/*I did not write the comment above this*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.row #content .grid-1, .row #content .grid-2, .row #content .grid-3, .row #content .grid-4 {
+		width: 48.2% !important;
+	}
+}
+/*I don't know*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body, html {
+	height: 100%;
+}
