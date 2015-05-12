@@ -133,7 +133,6 @@ nav ul ul li a:hover {
 }
 /*"List" is the box in which items lay in*/
 .content .list {
-	border-right: 1px solid #eee;
 	margin: 0 0 20px 0;
 	padding: 20px 40px 40px;
 }
