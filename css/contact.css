@@ -26,14 +26,13 @@
 	border-collapse: separate;
 }
 #membersLink{
-	background-color:#eeeeee;
-	padding:3vh;
-	border-style:outset;
+	background-color:rgb(243,243,243);
+	padding:2.4vh;
 	border-width:5px;
 	position:absolute;
-	border-radius: 5px;
+	border-radius: 1px;
 	border-color:#aaaaaa;
-	font-size:3.5vh;
-	margin-top:7vh;
-	margin-left:2vw;
+	font-size:3.2vh;
+	margin-top:5vh;
+	margin-left:3vw;
 }
